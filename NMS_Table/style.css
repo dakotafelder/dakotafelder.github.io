@@ -21,12 +21,13 @@ body{
   justify-content: center;
   align-items: center;
   width: 80vw;
-  margin-left: -6.5%;
 }
 
 .table{
   max-width: 100%;
   display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 8px;
 }
 
@@ -36,7 +37,6 @@ body{
   align-items: flex-end;
   justify-content: flex-end;
   flex-direction: column-reverse;
-  aspect-ratio: 1;
   transition: transform 0.2s ease-in-out;
 }
 
