@@ -1,3 +1,17 @@
+const videoSource = document.getElementById('videoSource');
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isSafari || isMobile) {
+    videoSource.src = 'output.mov';
+    videoSource.type = 'video/quicktime';
+} else {
+    videoSource.src = 'output.webm';
+    videoSource.type = 'video/webm';
+}
+
+//blob code =============================================
+
 const blobPath = document.getElementById('blobPath');
 const gradient = document.getElementById('gradient');
 
