@@ -10,6 +10,11 @@ if (isSafari || isMobile) {
     videoSource.type = 'video/webm';
 }
 
+// Show the video once it's fully loaded
+videoElement.addEventListener('loadeddata', function() {
+    videoElement.style.display = 'block';
+});
+
 //blob code =============================================
 
 const blobPath = document.getElementById('blobPath');
