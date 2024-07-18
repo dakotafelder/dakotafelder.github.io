@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Open Cherry';
-  src: url('./OpenCherry-Regular.otf') format('opentype');
+  src: url('assets/OpenCherry-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
