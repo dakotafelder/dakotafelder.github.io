@@ -7,11 +7,10 @@
 
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +18,8 @@ html, body {
 .heroContainer{
   display: flex;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .blobContainer {
@@ -80,3 +81,43 @@ p{
     line-height: 5vw;
   }
 }
+
+#box{
+  background-color: #ffffff;
+  width: 80vw;
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #ffd5fa, #fffda5, #ddffd5, #00ffff, #ffd5fa);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease infinite;
+  background-size: 300% 300%;
+  opacity: 50%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
