@@ -57,7 +57,106 @@ p{
   color: #b5b5b5;
 }
 
+#box{
+  background-color: #ffffff;
+  width: 80vw;
+}
 
+.gradient-border {
+  padding: 24px;
+  margin: 16px;
+  --borderWidth: 12px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #ffd5fa, #fffda5, #ddffd5, #00ffff, #ffd5fa);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 10s ease infinite;
+  background-size: 300% 300%;
+  opacity: 80%;
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.keycapModel{
+  width: 8vw;
+  height: 8vw;
+}
+
+model-viewer::part(default-progress-bar) {
+  display: none;
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+h3{
+  height: fit-content;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  font-size: 3vw;
+  margin: 0;
+  padding-left: .5vw;
+}
+
+.keyThumbnail{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.downloadItems{
+  display: flex;
+  justify-content: space-around;
+}
+
+.downloadContainer{
+  width: 48%;
+  margin-bottom: 24px;
+}
+
+.downloadLink{
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  color: black;
+  width: fit-content;
+  padding-top: 8px;
+}
+
+.downloadLink:hover{
+  color: blue;
+}
+
+.downloadIcon{
+  width: 2vw;
+}
+
+
+/* media query */
 
 @media only screen and (max-width: 768px) {
   .heroContainer{
@@ -80,44 +179,26 @@ p{
     font-size: 5vw;
     line-height: 5vw;
   }
-}
+  
+  h3{
+    font-size: 7vw;
+  }
 
-#box{
-  background-color: #ffffff;
-  width: 80vw;
-}
+  .keycapModel{
+    width: 12vw;
+    height: 12vw;
+  }
+  
+  .downloadItems{
+    flex-direction: column;
+  }
 
-.gradient-border {
-  --borderWidth: 3px;
-  background: #1D1F20;
-  position: relative;
-  border-radius: var(--borderWidth);
+  .downloadContainer{
+    width: 100%;
+  }
+  
+  .downloadLink{
+    font-size: 3vw;
+  }
+  
 }
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #ffd5fa, #fffda5, #ddffd5, #00ffff, #ffd5fa);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 10s ease infinite;
-  background-size: 300% 300%;
-  opacity: 50%;
-}
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-

@@ -1,3 +1,4 @@
+const videoElement = document.getElementById('videoElement');
 const videoSource = document.getElementById('videoSource');
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -14,6 +15,15 @@ if (isSafari || isMobile) {
 videoElement.addEventListener('loadeddata', function() {
     videoElement.style.display = 'block';
 });
+
+// Handle video loading errors
+videoElement.addEventListener('error', function(e) {
+    console.error('Error loading video:', e);
+    // Optionally, you can display a fallback image or message
+});
+
+// Force reload to ensure the video source is applied
+videoElement.load();
 
 //blob code =============================================
 
