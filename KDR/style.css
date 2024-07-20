@@ -100,6 +100,7 @@ p{
 .keycapModel{
   width: 8vw;
   height: 8vw;
+  padding-right: 8px;
 }
 
 model-viewer::part(default-progress-bar) {
@@ -198,7 +199,7 @@ h3{
   }
   
   .downloadLink{
-    font-size: 3vw;
+    font-size: 5vw;
   }
   
 }
