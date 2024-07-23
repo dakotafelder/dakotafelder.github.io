@@ -3,26 +3,30 @@
     <head>
         <title>Dakota Felder</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Stuff I've made.</h1>
-        <a href="./NMS_Table/index.html">No Man's Sky Periodic Table</a>
-        <br>
-        <video width="640" height="360" autoplay loop muted playsinline>
-            <source src="./NMS_Preview.mp4" type="video/mp4">
-        </video>
-        <br>
-        <br>
-        <br>
-        <a href="./KDR/index.html">Keycap Designer Resources</a>
-        <br>
-        <img src="./Assets/kdrThumbnail.png" width="640px">
-        <br>
-        <br>
-        <br>
-        <a href="./KDR/index.html">Usless Product Mockups</a>
-        <br>
-        <img src="./Assets/upmThumbnail.avif" width="640px">
+        <h1>Dakota Felder</h1>
+        <div class="articleContainer">
+            <a href="./NMS_Table/index.html">No Man's Sky Periodic Table</a>
+            <p>Based on the popular video game by Hello Games and inspired by The Elements by Theodore Gray.</p>
+            <video class="thumbnailImage" autoplay loop muted playsinline>
+                <source src="./Assets/nmsPreview.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="articleContainer">
+            <a href="./KDR/index.html">Keycap Designer Resources</a>
+            <p>Blender templates made to make 3D renders of keycaps easy. Downloaded over fifteen thousand times.</p>
+            <video class="thumbnailImage" autoplay loop muted playsinline>
+                <source src="./Assets/kdrPreview.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="articleContainer">
+            <a href="./UPM/index.html">Useless Product Mockups</a>
+            <p>Photoshop mockups of antiquated tech. Made in Blender.</p>
+            <img class="thumbnailImage" src="./Assets/upmThumbnail.avif" width="640px">
+        </div>
     </body>
-
 </html>
