@@ -10,7 +10,7 @@
         var length = buffer32.length;
         
         for (var i = 0; i < length; i++) {
-            if (Math.random() < 0.5) { // 10% chance for black pixel
+            if (Math.random() < 0.9) { // 10% chance for black pixel
                 buffer32[i] = 0xff000000; // Black
             } else {
                 buffer32[i] = 0xff414141; // Gray
