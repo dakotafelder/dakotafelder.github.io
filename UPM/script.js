@@ -23,7 +23,7 @@
     
     function animateNoise() {
         generateNoise();
-        setTimeout(animateNoise, 30); // Change every 100 milliseconds
+        setTimeout(animateNoise, 50); // Change every 100 milliseconds
     }
     
     animateNoise();
