@@ -36,6 +36,12 @@ p{
   color: #5a5a5a;
   width: 80%;
 }
+h3{
+  font-family: "Lora", serif;
+  color: #adadad;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
 .articleContainer{
   margin-bottom: 48px;
   max-width: 50vw;
@@ -64,5 +70,8 @@ p{
   }
   .articleContainer{
     max-width: 90vw;
+  }
+  h3{
+    font-size: 3vw;
   }
 }
