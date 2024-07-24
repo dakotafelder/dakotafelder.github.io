@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @font-face {
   font-family: 'Chomsky';
   src: url('./Assets/Chomsky.otf') format('opentype');
@@ -25,12 +26,13 @@ a{
   text-decoration: none;  
 }
 p{
+  font-family: "Lora", serif;
   margin: 0;
   padding: 0;
   padding-top: 4px;
   padding-bottom: 16px;
   font-size: 1.5vw;
-  line-height: 1.7vw;
+  line-height: 1.9vw;
   color: #5a5a5a;
   width: 80%;
 }
