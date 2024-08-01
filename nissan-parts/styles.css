@@ -75,7 +75,8 @@ p{
 }
 .button{
     color: white;
-    display: inline-block;
+    display: block;
+    text-align: center;
     background-color: #FF5454;    
     padding: 16px;
     text-decoration: none;
@@ -85,6 +86,8 @@ p{
 }
 .buttonDisabled{
     color: white;
+    text-align: center;
+    width: 100%;
     background-color: #c1c1c1;    
     padding: 16px;
     text-decoration: none;
@@ -110,11 +113,5 @@ p{
     }
     .thumbnail3D{
         height: 42vw;
-    }
-    .button{
-        width: 95%;
-    }
-    .buttonDisabled{
-        width: 100%;
     }
 }
