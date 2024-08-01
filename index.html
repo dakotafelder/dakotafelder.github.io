@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -31,6 +32,11 @@
             <video class="thumbnailImage" autoplay loop muted playsinline>
                 <source src="./Assets/upmPreview.mp4" type="video/mp4">
             </video>            
+        </div>
+        <div class="articleContainer">
+            <a href="./nissan-parts/index.html">Nissan Parts</a>
+            <p>Parts for early 90s Nissan Hardbody's. Just a cupholder for now.</p>
+            <model-viewer class="thumbnail3D" src="Assets/cupholder.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
         </div>
         <h3>hello@dakotafelder.com</h3>
     </body>

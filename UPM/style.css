@@ -24,15 +24,16 @@ h1{
 .downloadContainer {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(139deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.43) 100%);
     border: 4px solid;
     border-color: rgba(255, 255, 255, .26);
     border-radius: 16px;
+    background: linear-gradient(139deg,rgba(255,255,255,.06) 0%,rgba(255,255,255,.43) 100%);
     backdrop-filter: blur(1px);
     padding: 24px;
     margin: 16px;
     height: 100%;
     width: 20vw;
+    background-clip: padding-box;
 }
 .thumbnailImage{
     padding-bottom: 24px;

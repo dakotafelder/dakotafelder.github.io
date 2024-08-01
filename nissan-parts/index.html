@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="contentContainer">
+        <div class="cupholderVideo">
+            <iframe class="ytIframe" src="https://www.youtube.com/embed/Q4dtxWMjKck" title="Hardbody cupholder demo" frameborder="0"></iframe>
+        </div>
+        <div class="optionsContainer">
+            <div class="cupholderOption">
+                <img class="thumbnailImage" src="assets/cupholder.avif">
+                <h3>Hardbody cupholder 3D print</h3>
+                <p>I'll make one and ship it to you for $35 + shipping.</p>
+            </div>
+            <div class="cupholderOption">
+                <model-viewer class="thumbnail3D" src="Assets/cupholder.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                <h3>Hardbody cupholder CAD file</h3>
+                <p>$5 and you can make your own!</p>
+                <div id='product-component-1722486374128'></div>
+            </div>
+        </div>
+    </div>
+    <input type="range" id="speedSlider" min="1" max="50" value="5">
+    <label for="speedSlider">Speed</label>
+    <script src="script.js"></script>
+</body>
+</html>
