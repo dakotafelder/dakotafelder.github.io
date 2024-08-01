@@ -31,7 +31,7 @@ body{
     width: 60vw;
 }
 .cupholderVideo{
-    height: 60vh;
+    height: 50vw;
 }
 .ytIframe{
     height: 100%;
@@ -43,26 +43,43 @@ body{
     width: 100%;
 }
 .cupholderOption{
-    
+    margin-bottom: 24px;
 }
 .thumbnailImage{
     width: 100%;
+    max-height: 50%;
     border-radius: 12px;
 }
 .thumbnail3D{
     width: 100%;
-    height: 400px;
     border: 1px solid #f5f5f7;
     border-radius: 12px;
 }
 h3{
     padding: 0;
+    padding-top: 8px;
     margin: 0;
     font-weight: 500;
 }
 p{
     padding: 0;
+    padding-top: 4px;
     margin: 0;
     color: #828282;
     font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+    .contentContainer{
+        flex-direction: column;
+        padding: 12px;
+        width: 80vw;
+    }
+    .optionsContainer{
+        padding-left: 0px;
+        padding-top: 12px;
+        width: 100%;
+    }
+    .cupholderVideo{
+        height: 142vw;
+    }
 }
