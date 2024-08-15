@@ -10,12 +10,10 @@ body{
   flex-direction: column;
   align-items: center;
 }
-h1{
+.headerTitle{
   margin-top: 48px;
   margin-bottom: 48px;
-  font-family: 'Chomsky';
-  font-size: 8vw;
-  font-weight: 400;
+  max-width: 90%;
 }
 a{
   font-family: "Averia Serif Libre", serif;
@@ -42,6 +40,96 @@ h3{
   font-weight: 100;
   font-size: 1.2vw;
 }
+.shelfContainer{
+  display: relative;
+  width: 50vw;
+  margin-bottom: 72px;
+}
+.wholeShelf{
+  width: 50vw;
+  position: absolute;
+}
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.book {
+  position: relative; /* Position relative for absolute positioning of info */
+  height: 22vw;
+  display: flex; /* Enable flexbox for centering content */
+  flex-direction: column; /* Ensure the content flows vertically */
+  justify-content: flex-end; /* Align content to the bottom */
+  bottom: 16px;
+}
+.book-cover {
+  width: 10vw;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.book-cover:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.book-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.70);
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+  z-index: 10;
+}
+.book-info.active {
+  display: flex; /* Show the info when active */
+  flex-direction: row;
+  width: 50vw;
+}
+.book-title {
+  margin: 12px 0 0px; /* Space for title */
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 400;
+  font-size: 3vw;
+  color: #fff;
+}
+.book-author {
+  margin: 0; /* Remove default margin */
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 200;
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+.book-description {
+  font-family: "Lora", serif;
+  margin: 5px 0; /* Space around description */
+  font-size: 2vw;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+.close-info {
+  margin-top: 10px; /* Space above the close button */
+  background-color: #ff5722; /* Close button color */
+  color: white; /* Close button text color */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor to pointer */
+}
+.close-info:hover {
+  background-color: #e64a19; /* Darker color on hover */
+}
+.shelfSVG{
+  display: block;
+}
 .articleContainer{
   margin-bottom: 48px;
   width: 50vw;
@@ -63,9 +151,6 @@ h3{
 }
 
 @media only screen and (max-width: 768px) {
-  h1{
-    font-size: 15vw;
-  }
   a{
     font-size: 6vw;
   }
