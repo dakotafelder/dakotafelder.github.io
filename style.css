@@ -199,9 +199,10 @@ h3{
     width: 74vw;
   }
   .book-overlay-cover{
-    height: 45vw;
+    height: 40vw;
   }
   .book-title{
+    padding-top: 8px;
     font-size: 6vw;
   }
   .book-author{
