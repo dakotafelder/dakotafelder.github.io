@@ -39,6 +39,13 @@
             <model-viewer class="thumbnail3D" src="Assets/cupholder.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
         </div>
         <div class="shelfContainer">
+            <div class="shelfOverlay">
+                <img class="book-overlay-cover" src="${book.coverImage}" alt="${book.title}">
+                <h2 class="book-title">${book.title}</h2>
+                <h3 class="book-author">${book.author}</h3>
+                <p class="book-description">${book.description}</p>
+                <button class="close-info">Close</button>
+            </div>
             <img class="wholeShelf" src="./Assets/book_covers/shelf.svg">
             <div id="book-container" class="book-container"></div>
         </div>
