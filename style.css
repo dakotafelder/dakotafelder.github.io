@@ -11,8 +11,8 @@ body{
   align-items: center;
 }
 .headerTitle{
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 64px;
+  margin-bottom: 64px;
   max-width: 90%;
 }
 a{
@@ -97,7 +97,7 @@ h3{
   cursor: pointer;
 }
 .book-overlay-cover{
-  width: 35%;
+  height: 20vw;
 }
 .book-title {
   padding-top: 16px;
@@ -197,6 +197,9 @@ h3{
   }
   .shelfOverlay{
     width: 74vw;
+  }
+  .book-overlay-cover{
+    height: 45vw;
   }
   .book-title{
     font-size: 6vw;
