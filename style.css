@@ -177,6 +177,9 @@ h3{
     line-height: 4.9vw;
     width: 100%;
   }
+  .thumbnail3D{
+    height: 60vw;
+  }
   .articleContainer{
     width: 90vw;
   }

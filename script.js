@@ -8,7 +8,7 @@ const books = [
     {
         title: "The Bomber Mafia",
         author: "Malcolm Gladwell",
-        description: "If you’ve listened to any Malcom Gladwell, you know exactly what to expect. Set against the backdrop of WWII and the emerging technology of precision bombing.",
+        description: "If you\u2019ve listened to any Malcom Gladwell, you know exactly what to expect. Set against the backdrop of WWII and the emerging technology of precision bombing.",
         coverImage: "./Assets/book_covers/bomberMafia.jpg"
     },
     {
@@ -20,7 +20,7 @@ const books = [
     {
         title: "How to Hide an Empire",
         author: "Daniel Immerwahr",
-        description: "One of the only books I’ve ever read twice. Probably because there’s so many ways to hid an Empire. The past of the USA as not presented in history class.",
+        description: "One of the only books I\u2019ve ever read twice. Probably because there\u2019s so many ways to hide an Empire. The past of the USA as not presented in history class.",
         coverImage: "./Assets/book_covers/howToHideAnEmpire.jpg"
     },
     {
@@ -38,13 +38,13 @@ const books = [
     {
         title: "The Remains of the Day",
         author: "Kazuo Ishiguro",
-        description: "One of Kazuo Ishiguro’s most famous works. A butler reflects on a life of service. What does it mean to do good work? What does it mean to live a good life? Still need to watch the movie…",
+        description: "One of Kazuo Ishiguro\u2019s most famous works. A butler reflects on a life of service. What does it mean to do good work? What does it mean to live a good life? Still need to watch the movie\u2026",
         coverImage: "./Assets/book_covers/remainsOfTheDay.jpg"
     },
     {
         title: "A History of the World in 6 Glasses",
         author: "Tom Standage",
-        description: "A fun read about the broad topic of human history, through the slightly smaller lens of beverage. Beer, coffee, coca cola and the other’s that evolve alongside all of us.",
+        description: "A fun read about the broad topic of human history, through the slightly smaller lens of beverage. Beer, coffee, coca cola and the others that evolve alongside all of us.",
         coverImage: "./Assets/book_covers/sixGlasses.jpg"
     },
     {
