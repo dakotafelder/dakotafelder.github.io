@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>How we lost our biggest client</title>
+        <link rel="icon" href="Assets/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="contentContainer">
+            <div class="header">
+                <h1>We lost our biggest client :(</h1>
+                <p>Product designer</p>
+            </div>
+            <div>
+                <h2>Context</h2>
+                <p>The client cited a lack of functionality in the CMS as a large reason for churning. Doug, the product manager for the CMS, found the documentation for their current platform and we audited it to find what they did better. We broke it down into a few problems.
+                    <br>
+                    <br>
+                    What the competitor did better:
+                    <ol>
+                        <li>User roles and permissions (Larger clients seem to always equal larger processes)</li>
+                        <li>Version control (Drafts, activity log, roll-back)</li>
+                        <li>Reusable content blocks</li>
+                    </ol>
+                    </p>
+            </div>
+            <div>
+                <h2>1st Problem</h2>
+                <p>Clients want to create workflows around publishing content. For example Teacher A should be able to write up some content but not be allowed to edit the public website without approval from Administrator B. Our existing system assumed that if you had permission to the CMS product, you should be able to post whatever you want. Growing pains. </p>
+            </div>
+            <div>
+                <img src="./Assets/flowComparison.png" class="thumbnailImage" width="100%">
+                <p>A very abstract version of what we were looking at</p>
+            </div>
+            <div>
+                <h2>1st Solution</h2>
+                <p>On a per-page basis, allow for user permission hierarchy. Or put more simply, make it like sharing a google doc. This is one of those things that feels like a total no brainer, but when the product has been scrapply built on the backs of client success doing background work in an admin panel for years it starts to feel novel.</p>
+            </div>
+            <div>
+                <img src="./Assets/shareUI.png" class="thumbnailImage" width="100%">
+                <p>A snippet of the share popover UI</p>   
+            </div>
+            <p>The thing we had to consider most outside of just adopting an industry standard pattern, was making it reusable for the rest of our platform. This consisted of collaborating with back-end engineers on something reusable and with the front-end engineers to get it in our component library (storybook).</p>
+            <div>
+                <h2>2nd Problem</h2>
+                <p>Clients want to not feel like walking on eggshells when updating content on their website. Up to this point, when a page was published it would completely replace the old version with no way to undo the action through the UI. What resulted would be clients frantically coming into support asking if we could recover it, which our killer support team would always do. But that is a lot of friction.</p>
+            </div>
+            <div>
+                <h2>2nd Solution</h2>
+                <p>Introduce a safer way for users to update their content, a la git diff. Include a history log and the ability to roll-back.</p>
+            </div>
+            <div>
+                <img src="./Assets/draft.png" class="thumbnailImage" width="100%">
+                <p>Introduced a details view of a CMS page for all the new features to live</p>   
+            </div>
+            <div>
+                <img src="./Assets/activityLog.png" class="thumbnailImage" width="100%">
+                <p>Introduced an Activity Log to keep track of old versions and new proposals</p>   
+            </div>
+            <div>
+                <img src="./Assets/sideBySide.png" class="thumbnailImage" width="100%">
+                <p>Side by side content comparison</p>   
+            </div>
+            <div>
+                <h2>Rollout</h2>
+                <p>These updates were all rolled out together to a couple hand picked clients to test with before a full rollout to all clients.</p>
+            </div>
+            <div>
+                <h2>Impact</h2>
+                <p>-No more support conversations about mistakenly deleted content.</p>
+                <p>-Creating and sharing pages felt better, that intangible UX vibe.</p>
+                <p>-Large clients now had the level of control they were asking for.</p>
+            </div>
+            <div>
+                <h2>What I would do differently or like to improve</h2>
+                <p>-Reusable content blocks. We didn't get to it here, but it's just a matter of time.</p>
+                <p>-In-app notifications would take it up a notch. All page update notifications were via email in v1.</p>
+                <p>-Multiple approvals per page (like launching a nuke)</p>
+                <p>-The red and green highlights on changed content never made it to production.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -5,29 +5,37 @@ body{
   align-items: center;
   background-color: #000;
 }
-.headerTitle{
-  margin-top: 64px;
-  margin-bottom: 64px;
-  max-width: 90%;
+.contentContainer{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 72px;
 }
-a{
+h1{
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 500;
   font-size: 2vw;
   color: #fff;
-  text-decoration: none;  
+  margin: 0;
+}
+h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.4vw;
+  color: #fff;
+  margin: 0;
 }
 p{
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   padding-top: 4px;
-  padding-bottom: 16px;
-  font-size: 1.5vw;
-  line-height: 1.9vw;
+  font-weight: 300;
+  font-size: 1.4vw;
+  line-height: 1.8vw;
   color: #878787;
-  width: 80%;
+  width: 90%;
 }
 h3{
   font-family: "Inter", sans-serif;
@@ -35,35 +43,20 @@ h3{
   font-weight: 300;
   font-size: 1.2vw;
 }
-.articleContainer{
-  margin-bottom: 48px;
-  width: 50vw;
-  cursor: pointer;
-}
-.articleContainer:hover{
-  a{
-    text-decoration: underline;
-  }
-}
-.thumbnailImage{
-  width: 100%;
-}
+
 @media only screen and (max-width: 768px) {
-  a{
+  .contentContainer{
+    width: 90vw;
+  }
+  h1{
     font-size: 4vw;
   }
   p{
-    font-size: 3.5vw;
-    line-height: 4vw;
+    font-size: 3vw;
+    line-height: 3.9vw;
     width: 100%;
   }
-  .thumbnail3D{
-    height: 60vw;
-  }
-  .articleContainer{
-    width: 90vw;
-  }
-  h3{
+  h2{
     font-size: 3vw;
   }
 }

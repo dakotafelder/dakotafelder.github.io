@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Non-ASCII Characters</title>
+        <link rel="icon" href="Assets/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="contentContainer">
+            <div class="header">
+                <h1>Non-ASCII characters in messages</h1>
+                <p>Product designer, web and mobile</p>
+            </div>
+            <div>
+                <h2>Context</h2>
+                <p>At Apptegy, our core product was called the Live Feed — its a place where users can post to many platforms from the same place. (SMS, Facebook, Twitter, etc.)</p>
+            </div>
+            <div>
+                <h2>Problem</h2>
+                <p>Non-ASCII characters when encoded for SMS take up twice the space, cutting the allowable character count for messages from 1400 down to 700. The task was to come up with a way to explain this technical limitation to our not technical users.</p>
+            </div>
+            <div>
+                <lottie-player src="./Assets/seeSaw.json" background="transparent" speed="1" class="thumbnailImage" direction="1" mode="normal" loop autoplay></lottie-player>
+                <p>*artists interpretation of the problem</p>
+            </div>
+            <div>
+                <h2>Solution</h2>
+                <p>Give users context only when they need it. We'd highlight characters that triggered the business rule and show them the snippet of UI below. Working with both web and mobile developers to properly highlight the character in the text input field was the highlight of this project.</p>
+            </div>
+            <lottie-player src="./Assets/ascii.json" background="transparent" speed="1" class="thumbnailImage" direction="1" mode="normal" loop autoplay></lottie-player>
+            <img src="./Assets/appScreens.png" class="thumbnailImage">
+            <div>
+                <h2>Impact</h2>
+                <p>Messages would no longer silently fail due to breaking character limits, increasing the number of successful messages and decreasing the amount of support conversations.</p>
+            </div>
+            <div>
+                <h2>In a perfect world</h2>
+                <p>I think the better solution to this problem would be to truncate messages that are too long and send along a link that would take you to a webpage where you could read the full content. This would mean clients would never have to worry about character limits again.</p>
+            </div>
+        </div>
+    </body>
+</html>
