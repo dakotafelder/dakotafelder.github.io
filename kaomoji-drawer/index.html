@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <title>Kaomoji Drawer</title>
+    <meta property="og:title" content="Kaomoji Drawer">
+    <meta property="og:description" content="Create and use Japanese Emoticons from your Mac menu bar.">
+    <meta property="og:image" content="https://dakotafelder.com/kaomoji-drawer/assets/ogImage.png">
+    <meta property="og:url" content="https://dakotafelder.com/kaomoji-drawer/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="dakotafelder.com">
+    <meta property="twitter:url" content="https://dakotafelder.com/kaomoji-drawer/">
+    <meta name="twitter:title" content="Kaomoji Drawer">
+    <meta name="twitter:description" content="Create and use Japanese Emoticons from your Mac menu bar.">
+    <meta name="twitter:image" content="https://dakotafelder.com/kaomoji-drawer/assets/ogImage.png">
+    <meta name="x:card" content="summary_large_image">
+    <meta name="x:title" content="Kaomoji Drawer">
+    <meta name="x:description" content="Create and use Japanese Emoticons from your Mac menu bar.">
+    <meta name="x:image" content="https://dakotafelder.com/kaomoji-drawer/assets/ogImage.png">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="./assets/appIcon.png" alt="Kaomoji Drawer Icon" class="app-icon">
+            <h1>Kaomoji Drawer</h1>
+            <p>Create and use Japanese Emoticons from your Mac menu bar.</p>
+            <div class="input-container">
+                <input type="text" id="kaomojiPrompt" placeholder="Try out generating a Kaomoji">
+                <button id="generateKaomoji">
+                    <img src="./assets/AIButton.svg" alt="AI Button" id="aiButtonIcon">
+                    <div id="spinner" class="spinner" style="display: none;"></div>
+                </button>
+            </div>
+            <div id="generatedKaomoji"></div>
+            <div class="download-buttons">
+                <!-- <a href="#">
+                    <img src="./assets/Download_on_the_Mac_App_Store_Badge.svg" alt="Mac App Store Icon">                    
+                </a> -->
+                <a href="https://kaomoji-backend.vercel.app/public/kaomojiDrawer.zip" download class="download-btn">
+                    <img src="./assets/downloadIcon.svg" alt="Download Icon" class="download-icon">
+                    Free download
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <video src="./assets/uiVideo2.mp4" class="screenshot" autoplay loop muted></video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div class="email-link">
+        Help or suggestions? Email me at <a href="mailto:hello@dakotafelder.com">hello@dakotafelder.com</a>    |    <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+</body>
+</html>
